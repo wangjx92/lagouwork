@@ -1,0 +1,15 @@
+<configuration>
+
+        <!--数据库配置信息-->
+    <dataSource>
+        <property value="com.mysql.jdbc.Driver" name="driverClass"/>
+        <property value="jdbc:mysql:///zdy_mybatis" name="jdbcUrl"/>
+        <property value="root" name="username"/>
+        <property value="root" name="password"/>
+    </dataSource>
+
+    <!--存放mapper.xml的全路径-->
+    <mapper resource="UserMapper.xml"></mapper>
+    <mapper resource="UserRoleMapper.xml"></mapper>
+    <mapper resource="OrdersMapper.xml"></mapper>
+</configuration>

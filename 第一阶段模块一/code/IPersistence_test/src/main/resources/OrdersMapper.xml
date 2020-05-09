@@ -1,0 +1,13 @@
+<mapper namespace="com.lagou.dao.OrdersDao">
+
+    <select id="findByUid" resultType="com.lagou.pojo.Orders" paramterType="com.lagou.pojo.Orders">
+        select * from orders where uid = #{uid}
+    </select>
+
+
+
+    <insert id="delete"  paramterType="com.lagou.pojo.Orders">
+        delete from  orders where uid =#{uid}
+    </insert>
+
+</mapper>

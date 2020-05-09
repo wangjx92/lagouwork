@@ -1,0 +1,13 @@
+<mapper namespace="com.lagou.dao.IUserRoleDao">
+
+    <select id="findByUserid" resultType="com.lagou.pojo.UserRole" paramterType="com.lagou.pojo.UserRole">
+        select * from sys_user_role where userid = #{userid}
+    </select>
+
+
+
+    <insert id="delete"  paramterType="com.lagou.pojo.UserRole">
+        delete from  sys_user_role where userid =#{userid}
+    </insert>
+
+</mapper>
